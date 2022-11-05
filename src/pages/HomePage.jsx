@@ -1,8 +1,14 @@
 import Home from '../components/Home'
+import {Helmet} from 'react-helmet'
 
 function HomePage() {
   return (
-    <Home/>
+    <>
+      <Helmet>
+        <title>Home | Rizky Merdika Agusta</title>
+      </Helmet>
+      <Home/>
+    </>
   )
 }
 
