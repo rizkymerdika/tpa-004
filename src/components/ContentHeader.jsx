@@ -1,5 +1,5 @@
-// id: content-2
-// kelas: horizontal-rule-content-2
+import PropTypes from 'prop-types'
+
 function ContentHeader({nama, id, kelas}) {
   return (
     <div id={id}>
@@ -13,6 +13,22 @@ function ContentHeader({nama, id, kelas}) {
         </div>
     </div>
   )
+}
+
+ContentHeader.propTypes = {
+  nama: PropTypes.oneOf([
+    'BLOG',
+    'PROJECTS',
+    'ABOUT'
+  ]).isRequired,
+  id: PropTypes.oneOf([
+    'content-1',
+    'content-2'
+  ]).isRequired,
+  kelas: PropTypes.oneOf([
+    'horizontal-rule-content-1',
+    'horizontal-rule-content-2'
+  ]).isRequired
 }
 
 export default ContentHeader

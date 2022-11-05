@@ -1,8 +1,12 @@
-import React from 'react'
+import ContentHeader from '../components/ContentHeader'
+import ProjectList from '../components/ProjectList'
 
 function Projects() {
   return (
-    <div>Projects</div>
+    <>
+      <ContentHeader nama={"PROJECTS"} id={"content-2"} kelas={"horizontal-rule-content-2"}/>
+      <ProjectList/>
+    </>
   )
 }
 

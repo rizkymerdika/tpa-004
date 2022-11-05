@@ -1,8 +1,12 @@
-import React from 'react'
+import ContentHeader from '../components/ContentHeader'
+import ArticleList from "../components/ArticleList"
 
 function Blog() {
   return (
-    <div>Blog</div>
+    <>
+      <ContentHeader nama={"BLOG"} id={"content-2"} kelas={"horizontal-rule-content-2"}/>
+      <ArticleList/>
+    </>
   )
 }
 

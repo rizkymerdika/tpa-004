@@ -1,4 +1,4 @@
-nav, #content-1, #icon, #list-account, .project-list{
+nav, #content-1, #icon, #list-account, .project-list, #project{
     display: flex;
 }
 nav{
@@ -7,6 +7,7 @@ nav{
     height: 70px;
     position: sticky;
     top: 0;
+    z-index: 1;
 }
 nav label{
     font-size: 32px;
@@ -57,6 +58,7 @@ nav, #icon, #content-1{
 }
 #icon i{
     margin: 0 12px;
+    font-size: 32px;
 }
 .horizontal-rule-content-1{
     background-color: #ffff;
@@ -97,18 +99,18 @@ footer{
     transition: .4s;
 }
 .project-list{
-    justify-content: space-evenly;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 80%;
 }
 .project-list-item{
     width: 240px;
     height: 240px;
     position: relative;
+    margin-top: 16px;
     transition: transform 250ms;
 }
 .project-list-item:hover{
-    /* bottom: 10px;
-    left: 10px; */
-    
     transform: translate(10px, -10px);
 }
 .project-list-item h2, .project-list-item p{
@@ -122,6 +124,10 @@ footer{
 .project-list-item span{
     background-color: #7EB491;
     padding: 5px;
+    margin: 2px;
+}
+#project{
+    justify-content: center;
 }
 #project ,#article, #about{
     margin: 64px 0;
@@ -155,4 +161,99 @@ footer{
 }
 #about ul li{
     margin: 12px 80px;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    nav label{
+        font-size: 24px;
+    }
+    nav ul li{
+        font-size: 12px;
+        margin: 16px;
+    }
+    #content-1 h1, #content-2 h1{
+        font-size: 40px;
+    }
+    #content-1 p, .article-list a{
+        font-size: 20px;
+    }
+    .article-list{
+        width: 80%;
+    }
+    .project-list{
+        justify-content: space-evenly;
+    }
+    #copyright{
+        font-size: 12px;
+    }
+}
+@media screen and (max-width:425px) {
+    nav label{
+        font-size: 20px;
+        margin-left: 40px;
+    }
+    nav ul li{
+        font-size: 10px;
+        margin: 12px;
+    }
+    #content-1 img{
+        width: 200px;
+        height: 200px;
+    }
+    #content-1 h1, #content-2 h1{
+        font-size: 28px;
+    }
+    #content-1 p, #about ul li{
+        font-size: 16px;
+    }
+    #icon i{
+        font-size: 24px;
+    }
+    .article-list, #about{
+        width: 75%;
+    }
+}
+@media screen and (max-width: 375px) {
+    nav ul li{
+        margin: 8px;
+    }
+    .article-list a{
+        font-size: 16px;
+    }
+    .article-list p{
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 320px) {
+    nav label{
+        font-size: 16px;
+        margin-left: 32px;
+    }
+    nav ul{
+        margin-right: 28px;
+    }
+    nav ul li{
+        font-size: 8px;
+    }
+    #content-1 p{
+        font-size: 12px;
+    }
+    #content-1 h1{
+        font-size: 20px;
+    }
+    #content-1 img{
+        width: 180px;
+        height: 180px;
+    }
+    .horizontal-rule-content-1, .horizontal-rule-content-2{
+        width: 60px;
+        height: 4px;
+    }
+    #icon i{
+        font-size: 16px;
+    }
+    #copyright{
+        font-size: 10px;
+    }
 }
