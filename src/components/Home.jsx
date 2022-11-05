@@ -6,7 +6,7 @@ function HomePage() {
 
   return (
     <section id="content-1">
-        <img src="rizkymerdika\tpa-004\src\assets\Rizky M.png" alt="Rizky Merdika Agusta"/>
+        <img src=".\assets\Rizky M.png" alt="Rizky Merdika Agusta"/>
         <p>Hi there, I'm</p>
         <h1>{nama}</h1>
         <div id="icon">
