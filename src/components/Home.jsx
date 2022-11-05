@@ -1,12 +1,12 @@
 import { useState } from "react"
-
+import myPhoto from '../assets/RizkyM.png'
 
 function HomePage() {
   const [nama, setNama] = useState("Rizky Merdika Agusta")
 
   return (
     <section id="content-1">
-        <img src=".\assets\Rizky M.png" alt="Rizky Merdika Agusta"/>
+        <img src={myPhoto} alt="Rizky Merdika Agusta"/>
         <p>Hi there, I'm</p>
         <h1>{nama}</h1>
         <div id="icon">
