@@ -5,7 +5,7 @@ function ProjectList() {
         {
             title: "Personal Website",
             bio: "My Personal Website",
-            link: "https://rizkymerdika.netlify.app",
+            link: "https://rizkymerdika-personal-web.netlify.app",
             technology: ["HTML", "CSS"]
         },
         {
