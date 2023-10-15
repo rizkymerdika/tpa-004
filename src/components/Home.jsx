@@ -1,5 +1,5 @@
 import { useState } from "react"
-import myPhoto from '../assets/RizkyM.png'
+import myPhoto from '../assets/DSC_7990 rizky   4x6.jpg'
 
 function HomePage() {
   const [nama, setNama] = useState("Rizky Merdika Agusta")
@@ -7,7 +7,7 @@ function HomePage() {
   return (
     <section id="content-1">
         <img src={myPhoto} alt="Rizky Merdika Agusta"/>
-        <p>Hi there, I'm</p>
+        <p style={{marginTop: '10px'}}>Hi there, I'm</p>
         <h1>{nama}</h1>
         <div id="icon">
             <div className="horizontal-rule-content-1"></div>

@@ -5,7 +5,7 @@ function ProjectList() {
         {
             title: "Personal Website",
             bio: "My Personal Website",
-            link: "https://rizkymerdika-personal-web.netlify.app",
+            link: "https://rizkymerdika-portfolio.netlify.app",
             technology: ["HTML", "CSS"]
         },
         {
@@ -25,6 +25,24 @@ function ProjectList() {
             bio: "My Movies App",
             link: "https://rizkymerdika-movies-app.netlify.app",
             technology: ["HTML", "CSS", "JavaScript"]
+        },
+        {
+            title: "To Do List App",
+            bio: "My To Do List App",
+            link: "https://rizkymerdika-todolistapp.netlify.app",
+            technology: ["HTML", "CSS", "JavaScript", "Bootstrap", "Node JS", "React JS"]
+        },
+        {
+            title: "TeleDoc",
+            bio: "Final Project Program Studi Independen Skilvul: Tech4Impact di Bidang Front-End Web Developer",
+            link: "https://teledoc-febe22.netlify.app",
+            technology: ["HTML", "CSS", "JavaScript", "Bootstrap", "Node JS", "React JS"]
+        },
+        {
+            title: "SIHACI",
+            bio: "Media Promosi Pariwisata di Cianjur",
+            link: "https://fe-sihaci.netlify.app",
+            technology: ["HTML", "CSS", "JavaScript", "Bootstrap", "Node JS", "React JS"]
         }
     ])
 

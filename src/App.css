@@ -37,8 +37,8 @@ nav ul li a:hover{
 }
 #content-1 img{
     border-radius: 50%;
-    width: 250px;
-    height: 250px;
+    width: 300px;
+    height: 300px;
     margin-top: 88px;
 }
 #content-1 p, .article-list a, #about ul li{
@@ -99,13 +99,13 @@ footer{
     transition: .4s;
 }
 .project-list{
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     width: 80%;
 }
 .project-list-item{
     width: 240px;
-    height: 240px;
+    height: 280px;
     position: relative;
     margin-top: 16px;
     transition: transform 250ms;
@@ -117,7 +117,10 @@ footer{
     margin: 12px 12px;
 }
 .project-list-item div{
+    width: 230px;
     position: absolute;
+    display: flex;
+    flex-wrap: wrap;
     bottom: 24px;
     left: 12px;
 }

@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 
 function Bio({P1, P2}) {
     const [tech] = useState([
-        "HTML", "CSS", "JavaScript", "Bootstrap"
+        "HTML", "CSS", "JavaScript", "Bootstrap", "Node JS", "React JS"
     ])
 
   return (

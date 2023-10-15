@@ -11,6 +11,11 @@ function ArticleList() {
             title: "PENGEMBANGAN WEBSITE PARIWISATA BUDAYA SEBAGAI PLATFORM WISATA DIGITAL DI MASA PANDEMI",
             link: "https://ejournal.upi.edu/index.php/integrated/article/view/35536",
             date: "31/10/2021"
+        },
+        {
+            title: "PENGEMBANGAN SISTEM INFORMASI HAYU AMENG KA CIANJUR (SIHACI) BERBASIS WEBSITE SEBAGAI MEDIA PROMOSI OBJEK WISATA DI CIANJUR",
+            link: "http://repository.upi.edu/102621/",
+            date: "06/09/2023"
         }
     ])
 
@@ -20,7 +25,7 @@ function ArticleList() {
         {
             listArticle.map((item, index) => (
                 <div className="article-list" key={index}>
-                    <a href={item.link}>{item.title}</a>
+                    <a href={item.link} target='_blank'>{item.title}</a>
                     <p>{item.date}</p>
                 </div>
             ))
